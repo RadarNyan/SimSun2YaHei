@@ -1,0 +1,56 @@
+﻿// Define font face
+
+@gbk_font       : 'Microsoft YaHei' ;
+@gbk_font_bold  : 'Microsoft YaHei' ;
+@mono_font      :  Consolas ;
+@mono_font_bold :  Consolas ;
+
+// Define Unicode Range
+
+@range_latin : U+0000-2E7F ;
+@range_gbk   : U+2E80-FFFF ;
+
+// Define function
+
+.replace-font(@font, @font1, @font1_bold){
+    @font-face { font-family: @font; src: local(@font1)}
+    @font-face { font-family: @font; font-style: italic; src: local(@font1)}
+    @font-face { font-family: @font; font-weight: bold; src: local(@font1_bold)}
+    @font-face { font-family: @font; font-weight: bold; font-style: italic; src: local(@font1_bold)}
+}
+
+.combine-font(@font, @font1, @font1_bold, @font1_range, @font2, @font2_bold, @font2_range){
+    @font-face { font-family: @font; unicode-range: @font1_range; src: local(@font1)}
+    @font-face { font-family: @font; unicode-range: @font1_range; font-style: italic; src: local(@font1)}
+    @font-face { font-family: @font; unicode-range: @font1_range; font-weight: bold; src: local(@font1_bold)}
+    @font-face { font-family: @font; unicode-range: @font1_range; font-weight: bold; font-style: italic; src: local(@font1_bold)}
+    @font-face { font-family: @font; unicode-range: @font2_range; src: local(@font2)}
+    @font-face { font-family: @font; unicode-range: @font2_range; font-style: italic; src: local(@font2)}
+    @font-face { font-family: @font; unicode-range: @font2_range; font-weight: bold; src: local(@font2_bold)}
+    @font-face { font-family: @font; unicode-range: @font2_range; font-weight: bold; font-style: italic; src: local(@font2_bold)}
+}
+
+.replace(@font){ // Replace @font with @gbk_font
+    .replace-font(@font, @gbk_font, @gbk_font_bold);
+}
+
+.fallback(@font){ // Use latin part of @font and gbk part of @gbk_font
+    .combine-font(@font, @font, @font, @range_latin, @gbk_font, @gbk_font_bold, @range_gbk);
+}
+
+// Call functions
+
+/* Replace Simsun & NSimSun */
+.replace(Simsun);
+.replace(NSimsun);
+.replace('宋体');
+.replace('新宋体');
+/* Fallback common fonts */
+.fallback(arial);
+.fallback(consolas);
+/* Replace sans-serif */
+.replace(sans-serif);
+/* Replace monospace */
+.combine-font(monospace, @mono_font, @mono_font_bold, @range_latin, @gbk_font, @gbk_font_bold, @range_gbk);
+/* Replace fonts do not exist on Windows */
+.replace(STHeiti);

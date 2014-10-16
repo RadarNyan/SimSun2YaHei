@@ -1,0 +1,269 @@
+﻿/* Replace Simsun & NSimSun */
+@font-face {
+  font-family: Simsun;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: Simsun;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: Simsun;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: Simsun;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: NSimsun;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: NSimsun;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: NSimsun;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: NSimsun;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '宋体';
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '宋体';
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '宋体';
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '宋体';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '新宋体';
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '新宋体';
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '新宋体';
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: '新宋体';
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+/* Fallback common fonts */
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(arial);
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: arial;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(consolas);
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: consolas;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+/* Replace sans-serif */
+@font-face {
+  font-family: sans-serif;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: sans-serif;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: sans-serif;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+/* Replace monospace */
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-style: italic;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+0000-2E7F;
+  font-weight: bold;
+  font-style: italic;
+  src: local(Consolas);
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: monospace;
+  unicode-range: U+2E80-FFFF;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+/* Replace fonts do not exist on Windows */
+@font-face {
+  font-family: STHeiti;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: STHeiti;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: STHeiti;
+  font-weight: bold;
+  src: local('Microsoft YaHei');
+}
+@font-face {
+  font-family: STHeiti;
+  font-weight: bold;
+  font-style: italic;
+  src: local('Microsoft YaHei');
+}

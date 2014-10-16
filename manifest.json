@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "css": ["map.css"],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "match_about_blank": true,
+      "all_frames": true
+   } ],
+   "devtools_page": "devtools.html",
+   "description": "Map SimSun to Microsoft YaHei",
+   "name": "SimSun2YaHei",
+   "version": "3.1",
+   "manifest_version": 2
+}
